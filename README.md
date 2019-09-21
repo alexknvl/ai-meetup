@@ -1,1 +1,1 @@
-# ai-meetup
+# AI meetup
