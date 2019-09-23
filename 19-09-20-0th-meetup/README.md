@@ -1,5 +1,7 @@
 # Pytorch Introduction
 
+Video is [here](https://www.youtube.com/watch?v=pEdC8y5V1T0).
+
 Things we have talked about:
 
  1. Automatic differentiation
