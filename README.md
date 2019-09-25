@@ -31,6 +31,8 @@ Potential future topics, feel free to suggest on Discord or on the meetup page:
 
 Tools:
  
+* Deep Learning
+  * PyTorch
 * Text generation
   * GPT-2
 * Probabilistic Programming Languages
