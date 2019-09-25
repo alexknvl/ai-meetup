@@ -14,20 +14,35 @@ Potential future topics, feel free to suggest on Discord or on the meetup page:
   * Graph Embeddings
 * Genetic Algorithms
 * Natural Language Processing
-* Probabilistic Context-Free Grammars
-* Grammar Induction
+  * Probabilistic Context-Free Grammars
+  * Grammar Induction
 * Knowledge Base Completion
-* Probabilistic Graphical Model
 * Reinforcement Learning
 * Statistical Learning Theory
 * Active Learning
 * Style transfer
 * Causal inference in time series
-* Information Theory
-* Kalman filtering
 * Good ol' statistics
+  * Probability Distributions
+  * Kernel Methods
+  * Kalman filtering
+  * Gaussian Processes
+  * Mixture Models
+  * Graphical Models
+    * Bayesian Networks
+    * Markov Random Fields
+  * MCMC
+    * Hamiltonian
+    * NUTS
+  * Complexity
+    * Information Theory
+    * Kolmogorov complexity
+    * Minimum description length
 * Topological Data Analysis
 * Data Visualization
+* Deep Learning
+  * Stochastic Function Optimization
+  * Bayesian Neural Networks
 
 Tools:
  
