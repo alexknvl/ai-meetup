@@ -26,6 +26,7 @@ Potential future topics, feel free to suggest on Discord or on the meetup page:
   * Probability Distributions
   * Kernel Methods
   * Kalman filtering
+  * Stochastic processes
   * Gaussian Processes
   * Mixture Models
   * Graphical Models
