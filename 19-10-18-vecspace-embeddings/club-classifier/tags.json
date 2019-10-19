@@ -1,0 +1,45 @@
+[{
+  "name": "Art, Design and Fashion",
+  "keywords": "Painting, caricature, fashion, branding, web development, apps, sculpture, glass blowing, drawing, sketching, modelling, stitching, sewing, dresses, clothes, collection, wood burning, museum, artifact"
+},
+{
+  "name": "Architecture, Environment and Urban space",
+  "keywords": "planning, building, construction, architectonics  design, structure, construction, framework structure, construction, form, formation, shape, composition, organization, layout, design, build, Space, height, width, dimension, nature, light, elevation, habitat, territory, domain, home, abode, surroundings, conditions, environs, circumstances, situation, setting, milieu, medium, background, backdrop, scene, scenario, location, locale, context, framework, sphere, world, realm, preserve, province, ambience, atmosphere, climate, mood, air, aura, wildlife, flora, fauna, nature"
+},
+{
+  "name": "Business, Management and Entrepreneurship",
+  "keywords": "trade, trading, commerce, buying and selling, dealing, traffic, trafficking, marketing, merchandising, bargaining, dealings, transactions, negotiations, proceedings, management, running, direction, control, governing, administration, supervision, administration, running, managing, organization, charge, care, direction, leadership, control, governing, governance, ruling, command, superintendence, supervision, overseeing, conduct, handling, guidance, operation,  Money, opportunity, marketing, tools, SEOs, risk assessment, hustle, plan, idea, money, income, finance, economics"
+},
+{
+  "name": "Culinary",
+  "keywords": "Food, free food, cooking, classes, ingredients, diet, protein, dishes, pizza, healthy, eats, eating, cuisine, cookery, baking, food"
+},
+{
+  "name": "Education",
+  "keywords": "teaching, schooling, tuition, tutoring, instruction, pedagogy, andragogy, coaching, training, tutelage, drilling, preparation, guidance, indoctrination, inculcation, enlightenment, edification, cultivation, development, improvement, bettering learning, knowledge, literacy, schooling, scholarship, enlightenment, cultivation, culture, refinement, letters"
+},
+{
+  "name": "Engineering",
+  "keywords": "Scientific, applied, tech, hi-tech, mechanics, machines, organization, planning, plans, management, arrangement, administration, masterminding, direction, orchestration, regimentation, engineering, coordination, execution, handling, running, strategy, tactics, Architectural, Construction Environmental Earthquake Geotechnical Hydraulic Mining Structural Transportation, Acoustical Aerospace, Automotive Marine Mechatronics Railway Thermal, Computer Control Electromechanics Electronics Microwaves Power Radio Frequency Telecommunications, Biochemical Biological Molecular Petroleum Process Reaction Thermodynamics Transport phenomena "
+},
+{
+  "name": "Ethics and Cultural",
+  "keywords": "moral code, morals, morality, moral stand, moral principles, moral values, rights and wrongs, principles, ideals, creed, credo, ethos, fairness, justness, fair play, fair-mindedness, equity, equitableness, even-handedness, egalitarianism, impartiality, impartialness, lack of bias, objectivity, neutrality, disinterestedness, lack of prejudice, open-mindedness, nonpartisanship, honor, uprightness, decency, integrity, probity, honesty, righteousness, ethics, morals, morality, virtue, principle, right-mindedness, propriety, scrupulousness, trustworthiness, incorruptibility "
+},
+{
+  "name": "Fraternities and Sororities",
+  "keywords": "brother, frat, social, family, brotherhood, fellowship, kinship, friendship, companionship, support, mutual support, solidarity, community, union, togetherness, sisterhood, sodality, confraternity"
+},
+{
+  "name": "Governance, Politics and Law",
+  "keywords": "Senate, headship, directorship, direction, governorship, governance, administration, jurisdiction, captaincy, superintendency, control, ascendancy, rule, command, power, mastery, domination, dominion, premiership, sovereignty,government, local government, affairs of state, public affairs, diplomacy, party politics, political science, civics, statecraft, statesmanship, rules and regulations, system of laws, body of laws, constitution, legislation, code, legal code, charter, jurisprudence, regulation, principle, convention, direction, instruction, guideline, practice, fact, verity, certainty, certitude, law, principle  "
+},
+{
+  "name": "Honor society",
+  "keywords": "distinction, privilege, glory, tribute, kudos, cachet, prestige, fame, renown, merit, credit, importance, illustriousness, notability, respect, esteem, approbation,academic achievement"
+},
+{
+  "name": "Media, Journalism, and creative writing",
+  "keywords": "media, communication, the press, the print media, the fourth estate, radio journalism, television journalism, Fleet Street, reporting, writing, reportage, feature writing, news coverage, investigative journalism, articles, reports, features, pieces, stories, words, publication, print, press, written "
+}
+]
