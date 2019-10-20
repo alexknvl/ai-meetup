@@ -93,6 +93,91 @@
 
   \begin{align*}
     p_y'(y) &= p_x'(g(y)) (g'(y))^2 + p_x(g(y)) g''(y) \\
-    p_y''(y) &= p_x''(g(y)) (g'(y))^3 + 2 p_x'(g(y)) g'(y) g''(y) + p_x'(g(y)) g'(y) g''(y) + p_x(g(y)) g'''(y)
+    p_y''(y) &= p_x''(g(y)) (g'(y))^3 + 2 p_x'(g(y)) g'(y) g''(y) +
+                p_x'(g(y)) g'(y) g''(y) + p_x(g(y)) g'''(y) \\
+             &= p_x''(g(y)) (g'(y))^3 + 3 p_x'(g(y)) g'(y) g''(y) + p_x(g(y)) g'''(y) \\
+  \end{align*}
+
+  At $x=x_0, y=y_0$ assuming $g''(y_0)=0$,
+  \begin{align*}
+    p_y''(y) &= p_x''(x_0) (g'(y))^3 + p_x(g(y)) g'''(y) \\
+  \end{align*}
+
+  We can see that $p_x''(x_0) \leq 0$ is not a sufficient condition for $p_y''(y) \leq 0$.
+  In fact, if $p_x''(x_0) (g'(y))^3 + p_x(g(y)) g'''(y) > 0$, then a maximum of $p_x(x_0)$
+  may transform into a minimum of $p_y(y)$!
+
+  TODO: plot a normal distribution being transformed under $x = g(y) = y^3 + y$.
+\end{problem}
+
+% Problem 1.5
+\begin{problem}
+  Obvious.
+\end{problem}
+
+% Problem 1.6
+\begin{problem}
+  \begin{align*}
+    E_{xy}\left[(x-E[x])(y-E[y])\right] \\
+    ~~&= \int \int p(x, y) (x-E[x])(y-E[y]) dx dy \\
+      &= \int \int p(x) p(y) (x-E[x])(y-E[y]) dx dy \\
+      &= \int p(y) \int p(x) (x-E[x])(y-E[y]) dx dy \\
+      &= \int p(y) (E[x]-E[x])(y-E[y]) dy \\
+      &= (E[x]-E[x])(E[y]-E[y]) \\
+  \end{align*}
+\end{problem}
+
+% Problem 1.7
+\begin{problem}
+  Let $I = \int_{-\infty}^{\infty} exp\left(-\frac{x^2}{2\sigma^2}\right) dx$, then
+  \begin{align*}
+    I^2 &= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}
+      \exp\left(-\frac{x^2}{2\sigma^2}-\frac{y^2}{2\sigma^2}\right) dx dy \\
+        &= \int_{0}^{\infty} \exp\left(-\frac{r^2}{2\sigma^2}\right) 2\pi r dr
+  \end{align*}
+  Substituting $u=r^2$ and $du = 2 r dr$,
+  \begin{align*}
+    I^2 &= \int_{0}^{\infty} \exp\left(-\frac{u}{2\sigma^2}\right) \pi du \\
+        &= -2 \pi \sigma^2 \left( \lim_{x\to\infty} exp\left(-\frac{x^2}{2\sigma^2}\right) -
+                                  exp(0) \right) \\
+        &= 2 \pi \sigma^2
+  \end{align*}
+
+  Therefore $I = \sqrt{2 \pi \sigma^2}$.
+\end{problem}
+
+% Problem 1.8
+\begin{problem}
+  \begin{align*}
+    E[x] &= \int_{-\infty}^{\infty} x \cdot \frac{1}{\sqrt{2\pi \sigma^2}}
+      exp \left(-\frac{(x-\mu)^2}{2\sigma^2}\right) dx \\
+         &\xlongequal[dv = dx]{v = x - \mu}
+         \int_{-\infty}^{\infty} v \cdot \frac{1}{\sqrt{2\pi \sigma^2}}
+         exp \left(-\frac{v^2}{2\sigma^2}\right) dv + \mu
+  \end{align*}
+
+  And since $P(x)$ is symmetric, $\int v P(v) dv = 0$, so $E[x] = \mu$.
+
+  \begin{align*}
+    \int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi \sigma^2}}
+      exp \left(-\frac{(x-\mu)^2}{2\sigma^2}\right) dx = 1
+  \end{align*}
+
+  Differentiating both sides as functions of $u = \sigma^2$, we get
+  \begin{align*}
+    \int_{-\infty}^{\infty} \left\{ -\frac{1}{\sigma^2} P(x) +
+                                     \frac{(x - \mu)^2}{\sigma^4} P(x)
+                            \right\} dx = 0 \\
+  \end{align*}
+
+  Both sub-integrals are expectations:
+  \begin{align*}
+    -E_x\left[ \frac{1}{\sigma^2} \right] +
+     E_x\left[ \frac{(x - \mu)^2}{\sigma^4} \right] = 0
+  \end{align*}
+
+  Thus
+  \begin{align*}
+    \sigma^2 = E_x\left[ \frac{(x - \mu)^2}{\sigma^2} \right]
   \end{align*}
 \end{problem}
