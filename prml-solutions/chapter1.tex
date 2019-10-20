@@ -181,3 +181,91 @@
     \sigma^2 = E_x\left[ \frac{(x - \mu)^2}{\sigma^2} \right]
   \end{align*}
 \end{problem}
+
+% Problem 1.9
+\begin{problem}
+  To find the maximum of $N(x | \mu, \sigma^2)$, we have to set
+  \begin{align*}
+    \frac{\partial}{\partial x} N(x | \mu, \sigma^2) = 0
+  \end{align*}
+
+  But it is easier to do first take the log of probability density:
+  \begin{align*}
+    \frac{\partial}{\partial x} \ln N(x | \mu, \sigma^2) &=
+    \frac{\partial}{\partial x} \left[ -\frac{1}{2} \ln (2 \pi \sigma^2) - \frac{(x - \mu)^2}{2 \sigma^2} \right] \\
+    &= \frac{\partial}{\partial x} \left[ - (x - \mu)^2 \right] \cdot \frac{1}{2 \sigma^2} \\
+    &= -\frac{x - \mu}{\sigma^2} \\
+    &= 0
+  \end{align*}
+
+  And we immediately get $x = \mu$ and since $\frac{\partial}{\partial x}\ln f(x) = \frac{f'(x)}{f(x)}$,
+  \begin{align*}
+    \frac{\partial}{\partial x} N(x | \mu, \sigma^2) = -\frac{x - \mu}{\sigma^2} N(x | \mu, \sigma^2)
+  \end{align*}
+
+  This allows us to easily calculate the second derivative as well:
+  \begin{align*}
+    \frac{\partial^2}{\partial^2 x} N(x | \mu, \sigma^2)
+        &= -\frac{1}{\sigma^2} N(x | \mu, \sigma^2) \\
+        &+ \frac{(x - \mu)^2}{\sigma^4} N(x | \mu, \sigma^2)
+  \end{align*}
+
+  Substituting $x = \mu$, we see that the second derivative is $-\sigma^{-2}$,
+  a negative number, thus $x = \mu$ is indeed a local (and global) minimum.
+
+  TODO add the N-dimensional case.
+\end{problem}
+
+% Problem 1.10
+\begin{problem}
+  \begin{align*}
+    E_{xy}\left[x + z\right] &= \int \int p(x, z) (x + z) dx dz \\
+                &= \int \int p(x)p(z) (x + z) dx dz \\
+                &= \int p(z) \left( \int p(x) (x + z) dx \right) dz \\
+                &= \int p(z) \left( E[x] + z \right) dz \\
+                &= E[x]+ E[z]
+  \end{align*}
+
+  \begin{align*}
+    \int \int p(x, z) (x + z)^2 dx dz
+                &= \int \int p(x) p(z) (x + z)^2 dx dz \\
+                &= \int \int p(x) p(z) (x^2 + 2 x z + z^2) dx dz \\
+                &= \int p(z) \left( \int p(x) (x^2 + 2 x z + z^2) dx \right) dz \\
+                &= \int p(z) \left( E[x^2] + 2 E[x] z + z^2 \right) dz \\
+                &= E[x^2] + 2 E[x] E[z] + E[z^2]
+  \end{align*}
+
+  Since $var[x] = E[x^2] - E^2[x]$,
+  \begin{align*}
+    var[x + z] &= E[x^2] + 2 E[x] E[z] + E[z^2] - E^2[x + z] \\
+                &= E[x^2] + 2 E[x] E[z] + E[z^2] - E[x]^2 - 2 E[x] E[z] - E[z]^2 \\
+                &= var[x] + var[z]
+  \end{align*}
+\end{problem}
+
+% Problem 1.11
+\begin{problem}
+  Boring.
+\end{problem}
+
+% Problem 1.12
+\begin{problem}
+  If $n=m$, then $E[x_n x_m] = E[x_n^2] = var[x_n] + E^2[x] = \sigma^2 + \mu^2$.
+  If $n\neq m$, then $E[x_n x_m] = E[x_n] E[x_m] = \mu^2$.
+  Combined, we get $E[x_n x_m] = \mu^2 + \sigma_{nm} \sigma^2$.
+\end{problem}
+
+% Problem 1.13
+\begin{problem}
+  \begin{align*}
+    \sigma_1^2 = \frac{1}{N} \sum_n (x_n - \mu)^2 =
+      \frac{1}{N} \sum_n (x_n^2 - 2 x_n \mu + \mu^2)
+  \end{align*}
+
+  Taking expectation, we get
+  \begin{align*}
+    E[\sigma_1^2] &= \frac{1}{N} \cdot N (E[x^2] - 2 E[x] \mu + \mu^2) \\
+                  &= E[x^2] - 2 \mu \cdot \mu + \mu^2 \\
+                  &= var[x] = \sigma^2
+  \end{align*}
+\end{problem}
