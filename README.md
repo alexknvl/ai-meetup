@@ -1,6 +1,6 @@
 # AI meetup
 
-Feel free to join our [Discord](https://discord.gg/9DDSdSe) to discuss.
+Feel free to join our [Discord](https://discord.gg/fFgYT22) to discuss.
 
 Potential future topics, feel free to suggest on Discord or on the meetup page:
 
